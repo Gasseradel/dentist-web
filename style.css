@@ -188,7 +188,7 @@ img{
 /* HERO */
 
 .hero{
-  min-height:650px;
+  min-height:100%;
   position:relative;
   color:#fff;
   overflow:hidden;
