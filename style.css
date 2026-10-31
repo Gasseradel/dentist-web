@@ -323,6 +323,272 @@ body {
   background: #062544;
 }
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1100px) {
+  .nav {
+    gap: 16px;
+  }
+
+  .logo {
+    min-width: auto;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .btn-small {
+    padding: 10px 13px;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  .hero-note {
+    right: 15px;
+    font-size: 21px;
+  }
+
+  .hero-features > div {
+    padding-right: 12px;
+    margin-right: 12px;
+  }
+}
+
+/* Mobile menu and tablets */
+@media (max-width: 768px) {
+  .nav {
+    height: 72px;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav > .btn-small {
+    display: none;
+  }
+
+  .hero,
+  .hero-content {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-copy {
+    padding-top: 75px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(42px, 8vw, 56px);
+    letter-spacing: -1.5px;
+  }
+
+  .hero-copy > p {
+    max-width: 440px;
+    font-size: 13px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-actions .btn {
+    gap: 10px;
+    padding: 13px 17px;
+  }
+
+  .hero-features {
+    flex-wrap: wrap;
+    row-gap: 18px;
+    max-width: 470px;
+  }
+
+  .hero-features > div {
+    width: calc(50% - 12px);
+    margin-right: 0;
+    padding-right: 8px;
+    border-right: 0;
+  }
+
+  .hero-note {
+    display: none;
+  }
+
+  .hero-bg {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(1, 27, 49, .96),
+        rgba(3, 37, 64, .78)
+      ),
+      url("https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85")
+      center / cover;
+  }
+
+   .nav {
+    position: relative;
+  }
+
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+
+    padding: 10px 20px;
+    background: #062544;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.show a {
+    padding: 13px 0;
+    font-size: 14px;
+  }
+
+  .nav-links.show a.active::after,
+  .nav-links.show a:hover::after {
+    bottom: 5px;
+  }
+}
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .nav {
+    height: 68px;
+  }
+
+  .logo-tooth {
+    font-size: 32px;
+  }
+
+  .logo b {
+    font-size: 15px;
+  }
+
+  .logo small {
+    font-size: 8px;
+  }
+
+  .menu-btn {
+    font-size: 26px;
+  }
+
+  .hero,
+  .hero-content {
+    min-height: 680px;
+  }
+
+  .hero-copy {
+    padding-top: 65px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+  }
+
+  h1 {
+    font-size: clamp(38px, 10vw, 46px);
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+
+  .hero-copy > p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 22px 0 28px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+  }
+
+  .hero-features {
+    column-gap: 10px;
+    row-gap: 18px;
+  }
+
+  .hero-features > div {
+    width: calc(50% - 5px);
+    gap: 8px;
+    font-size: 9px;
+  }
+
+  .hero-features i {
+    font-size: 20px;
+  }
+}
+
+/* Very narrow phones */
+@media (max-width: 360px) {
+  .logo {
+    gap: 6px;
+  }
+
+  .logo-tooth {
+    font-size: 28px;
+  }
+
+  .logo b {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero,
+  .hero-content {
+    min-height: 700px;
+  }
+}
+
 .hero {
   min-height: 100vh;
 }
