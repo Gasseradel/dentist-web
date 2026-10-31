@@ -15,9 +15,9 @@
 }
 
 html, body{
-  padding:0
-  margain:0
-  min-width:100%
+  margin: 0;
+  padding: 0;
+  min-height: 0;
 }
 
 body{
