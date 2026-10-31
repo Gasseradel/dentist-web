@@ -312,8 +312,18 @@ h1 strong{
 
   transform:rotate(-10deg);
 }
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #062544;
+}
+
 .hero {
   min-height: 100vh;
 }
-
 
