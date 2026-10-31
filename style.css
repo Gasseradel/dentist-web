@@ -14,8 +14,10 @@
   --white:#fff;
 }
 
-html{
-  scroll-behavior:smooth;
+html, body{
+  padding:0
+  margain:0
+  min-width:100%
 }
 
 body{
